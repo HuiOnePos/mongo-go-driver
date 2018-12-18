@@ -7,9 +7,9 @@
 package options
 
 import (
-	"github.com/mongodb/mongo-go-driver/mongo/readconcern"
-	"github.com/mongodb/mongo-go-driver/mongo/readpref"
-	"github.com/mongodb/mongo-go-driver/mongo/writeconcern"
+	"mongo-go-driver/mongo/readconcern"
+	"mongo-go-driver/mongo/readpref"
+	"mongo-go-driver/mongo/writeconcern"
 )
 
 // TransactionOptions represents all possible options for starting a transaction.

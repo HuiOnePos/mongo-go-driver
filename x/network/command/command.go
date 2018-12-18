@@ -12,17 +12,17 @@ import (
 	"context"
 
 	"fmt"
-	"github.com/mongodb/mongo-go-driver/bson"
-	"github.com/mongodb/mongo-go-driver/bson/bsontype"
-	"github.com/mongodb/mongo-go-driver/bson/primitive"
-	"github.com/mongodb/mongo-go-driver/mongo/readconcern"
-	"github.com/mongodb/mongo-go-driver/mongo/writeconcern"
-	"github.com/mongodb/mongo-go-driver/x/bsonx"
-	"github.com/mongodb/mongo-go-driver/x/bsonx/bsoncore"
-	"github.com/mongodb/mongo-go-driver/x/mongo/driver/session"
-	"github.com/mongodb/mongo-go-driver/x/network/description"
-	"github.com/mongodb/mongo-go-driver/x/network/result"
-	"github.com/mongodb/mongo-go-driver/x/network/wiremessage"
+	"mongo-go-driver/bson"
+	"mongo-go-driver/bson/bsontype"
+	"mongo-go-driver/bson/primitive"
+	"mongo-go-driver/mongo/readconcern"
+	"mongo-go-driver/mongo/writeconcern"
+	"mongo-go-driver/x/bsonx"
+	"mongo-go-driver/x/bsonx/bsoncore"
+	"mongo-go-driver/x/mongo/driver/session"
+	"mongo-go-driver/x/network/description"
+	"mongo-go-driver/x/network/result"
+	"mongo-go-driver/x/network/wiremessage"
 )
 
 // WriteBatch represents a single batch for a write operation.

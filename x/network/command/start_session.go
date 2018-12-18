@@ -9,12 +9,12 @@ package command
 import (
 	"context"
 
-	"github.com/mongodb/mongo-go-driver/bson"
-	"github.com/mongodb/mongo-go-driver/x/bsonx"
-	"github.com/mongodb/mongo-go-driver/x/mongo/driver/session"
-	"github.com/mongodb/mongo-go-driver/x/network/description"
-	"github.com/mongodb/mongo-go-driver/x/network/result"
-	"github.com/mongodb/mongo-go-driver/x/network/wiremessage"
+	"mongo-go-driver/bson"
+	"mongo-go-driver/x/bsonx"
+	"mongo-go-driver/x/mongo/driver/session"
+	"mongo-go-driver/x/network/description"
+	"mongo-go-driver/x/network/result"
+	"mongo-go-driver/x/network/wiremessage"
 )
 
 // StartSession represents a startSession command

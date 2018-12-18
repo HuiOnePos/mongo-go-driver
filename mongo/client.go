@@ -10,20 +10,20 @@ import (
 	"context"
 	"time"
 
-	"github.com/mongodb/mongo-go-driver/bson"
-	"github.com/mongodb/mongo-go-driver/bson/bsoncodec"
-	"github.com/mongodb/mongo-go-driver/mongo/options"
-	"github.com/mongodb/mongo-go-driver/mongo/readconcern"
-	"github.com/mongodb/mongo-go-driver/mongo/readpref"
-	"github.com/mongodb/mongo-go-driver/mongo/writeconcern"
-	"github.com/mongodb/mongo-go-driver/tag"
-	"github.com/mongodb/mongo-go-driver/x/mongo/driver"
-	"github.com/mongodb/mongo-go-driver/x/mongo/driver/session"
-	"github.com/mongodb/mongo-go-driver/x/mongo/driver/topology"
-	"github.com/mongodb/mongo-go-driver/x/mongo/driver/uuid"
-	"github.com/mongodb/mongo-go-driver/x/network/command"
-	"github.com/mongodb/mongo-go-driver/x/network/connstring"
-	"github.com/mongodb/mongo-go-driver/x/network/description"
+	"mongo-go-driver/bson"
+	"mongo-go-driver/bson/bsoncodec"
+	"mongo-go-driver/mongo/options"
+	"mongo-go-driver/mongo/readconcern"
+	"mongo-go-driver/mongo/readpref"
+	"mongo-go-driver/mongo/writeconcern"
+	"mongo-go-driver/tag"
+	"mongo-go-driver/x/mongo/driver"
+	"mongo-go-driver/x/mongo/driver/session"
+	"mongo-go-driver/x/mongo/driver/topology"
+	"mongo-go-driver/x/mongo/driver/uuid"
+	"mongo-go-driver/x/network/command"
+	"mongo-go-driver/x/network/connstring"
+	"mongo-go-driver/x/network/description"
 )
 
 const defaultLocalThreshold = 15 * time.Millisecond
@@ -202,6 +202,7 @@ func newClient(cs connstring.ConnString, opts ...*options.ClientOptions) (*Clien
 	client.topology = topo
 	client.clock = &session.ClusterClock{}
 
+	client.readConcern = clientOpt.ReadConcern
 	if client.readConcern == nil {
 		client.readConcern = readConcernFromConnString(&client.connString)
 
@@ -210,10 +211,11 @@ func newClient(cs connstring.ConnString, opts ...*options.ClientOptions) (*Clien
 			client.readConcern = readconcern.New()
 		}
 	}
-
+	client.writeConcern = clientOpt.WriteConcern
 	if client.writeConcern == nil {
 		client.writeConcern = writeConcernFromConnString(&client.connString)
 	}
+	client.readPreference = clientOpt.ReadPreference
 	if client.readPreference == nil {
 		rp, err := readPreferenceFromConnString(&client.connString)
 		if err != nil {
@@ -229,6 +231,7 @@ func newClient(cs connstring.ConnString, opts ...*options.ClientOptions) (*Clien
 	if client.registry == nil {
 		client.registry = bson.DefaultRegistry
 	}
+	client.retryWrites =  *clientOpt.RetryWrites
 	return client, nil
 }
 

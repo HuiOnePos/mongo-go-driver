@@ -16,7 +16,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/mongodb/mongo-go-driver/bson/primitive"
+	"mongo-go-driver/bson/primitive"
 )
 
 // Zeroer allows custom struct types to implement a report of zero

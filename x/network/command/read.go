@@ -11,13 +11,13 @@ import (
 
 	"fmt"
 
-	"github.com/mongodb/mongo-go-driver/bson"
-	"github.com/mongodb/mongo-go-driver/mongo/readconcern"
-	"github.com/mongodb/mongo-go-driver/mongo/readpref"
-	"github.com/mongodb/mongo-go-driver/x/bsonx"
-	"github.com/mongodb/mongo-go-driver/x/mongo/driver/session"
-	"github.com/mongodb/mongo-go-driver/x/network/description"
-	"github.com/mongodb/mongo-go-driver/x/network/wiremessage"
+	"mongo-go-driver/bson"
+	"mongo-go-driver/mongo/readconcern"
+	"mongo-go-driver/mongo/readpref"
+	"mongo-go-driver/x/bsonx"
+	"mongo-go-driver/x/mongo/driver/session"
+	"mongo-go-driver/x/network/description"
+	"mongo-go-driver/x/network/wiremessage"
 )
 
 // Read represents a generic database read command.

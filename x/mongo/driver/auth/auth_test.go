@@ -11,9 +11,9 @@ import (
 
 	"reflect"
 
-	"github.com/mongodb/mongo-go-driver/x/bsonx"
-	. "github.com/mongodb/mongo-go-driver/x/mongo/driver/auth"
-	"github.com/mongodb/mongo-go-driver/x/network/wiremessage"
+	"mongo-go-driver/x/bsonx"
+	. "mongo-go-driver/x/mongo/driver/auth"
+	"mongo-go-driver/x/network/wiremessage"
 	"github.com/stretchr/testify/require"
 )
 

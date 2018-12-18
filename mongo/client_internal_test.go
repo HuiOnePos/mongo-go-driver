@@ -14,20 +14,20 @@ import (
 
 	"fmt"
 
-	"github.com/mongodb/mongo-go-driver/bson"
-	"github.com/mongodb/mongo-go-driver/internal/testutil"
-	"github.com/mongodb/mongo-go-driver/tag"
-	"github.com/mongodb/mongo-go-driver/x/bsonx"
+	"mongo-go-driver/bson"
+	"mongo-go-driver/internal/testutil"
+	"mongo-go-driver/tag"
+	"mongo-go-driver/x/bsonx"
 	"github.com/stretchr/testify/require"
 
 	"time"
 
-	"github.com/mongodb/mongo-go-driver/mongo/options"
-	"github.com/mongodb/mongo-go-driver/mongo/readpref"
-	"github.com/mongodb/mongo-go-driver/mongo/writeconcern"
-	"github.com/mongodb/mongo-go-driver/x/mongo/driver/session"
-	"github.com/mongodb/mongo-go-driver/x/mongo/driver/uuid"
-	"github.com/mongodb/mongo-go-driver/x/network/connstring"
+	"mongo-go-driver/mongo/options"
+	"mongo-go-driver/mongo/readpref"
+	"mongo-go-driver/mongo/writeconcern"
+	"mongo-go-driver/x/mongo/driver/session"
+	"mongo-go-driver/x/mongo/driver/uuid"
+	"mongo-go-driver/x/network/connstring"
 )
 
 func createTestClient(t *testing.T) *Client {

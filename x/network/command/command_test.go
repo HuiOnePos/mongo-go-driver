@@ -9,9 +9,9 @@ package command
 import (
 	"testing"
 
-	"github.com/mongodb/mongo-go-driver/mongo/readpref"
-	"github.com/mongodb/mongo-go-driver/x/network/description"
-	"github.com/mongodb/mongo-go-driver/x/network/wiremessage"
+	"mongo-go-driver/mongo/readpref"
+	"mongo-go-driver/x/network/description"
+	"mongo-go-driver/x/network/wiremessage"
 )
 
 func noerr(t *testing.T, err error) {

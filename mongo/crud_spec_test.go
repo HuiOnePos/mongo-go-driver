@@ -17,14 +17,14 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/mongodb/mongo-go-driver/mongo/options"
-	"github.com/mongodb/mongo-go-driver/x/bsonx"
+	"mongo-go-driver/mongo/options"
+	"mongo-go-driver/x/bsonx"
 
 	"fmt"
 
-	"github.com/mongodb/mongo-go-driver/bson"
-	"github.com/mongodb/mongo-go-driver/internal/testutil/helpers"
-	"github.com/mongodb/mongo-go-driver/mongo/writeconcern"
+	"mongo-go-driver/bson"
+	"mongo-go-driver/internal/testutil/helpers"
+	"mongo-go-driver/mongo/writeconcern"
 	"github.com/stretchr/testify/require"
 )
 

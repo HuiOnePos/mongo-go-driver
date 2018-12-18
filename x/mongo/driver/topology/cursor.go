@@ -11,13 +11,13 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/mongodb/mongo-go-driver/bson"
-	"github.com/mongodb/mongo-go-driver/bson/bsoncodec"
-	"github.com/mongodb/mongo-go-driver/bson/bsontype"
-	"github.com/mongodb/mongo-go-driver/x/bsonx"
-	"github.com/mongodb/mongo-go-driver/x/mongo/driver/session"
-	"github.com/mongodb/mongo-go-driver/x/network/command"
-	"github.com/mongodb/mongo-go-driver/x/network/wiremessage"
+	"mongo-go-driver/bson"
+	"mongo-go-driver/bson/bsoncodec"
+	"mongo-go-driver/bson/bsontype"
+	"mongo-go-driver/x/bsonx"
+	"mongo-go-driver/x/mongo/driver/session"
+	"mongo-go-driver/x/network/command"
+	"mongo-go-driver/x/network/wiremessage"
 )
 
 type cursor struct {

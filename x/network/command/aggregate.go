@@ -9,14 +9,14 @@ package command
 import (
 	"context"
 
-	"github.com/mongodb/mongo-go-driver/bson"
-	"github.com/mongodb/mongo-go-driver/mongo/readconcern"
-	"github.com/mongodb/mongo-go-driver/mongo/readpref"
-	"github.com/mongodb/mongo-go-driver/mongo/writeconcern"
-	"github.com/mongodb/mongo-go-driver/x/bsonx"
-	"github.com/mongodb/mongo-go-driver/x/mongo/driver/session"
-	"github.com/mongodb/mongo-go-driver/x/network/description"
-	"github.com/mongodb/mongo-go-driver/x/network/wiremessage"
+	"mongo-go-driver/bson"
+	"mongo-go-driver/mongo/readconcern"
+	"mongo-go-driver/mongo/readpref"
+	"mongo-go-driver/mongo/writeconcern"
+	"mongo-go-driver/x/bsonx"
+	"mongo-go-driver/x/mongo/driver/session"
+	"mongo-go-driver/x/network/description"
+	"mongo-go-driver/x/network/wiremessage"
 )
 
 // Aggregate represents the aggregate command.

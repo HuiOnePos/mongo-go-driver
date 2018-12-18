@@ -24,13 +24,13 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/mongodb/mongo-go-driver/bson/bsontype"
-	"github.com/mongodb/mongo-go-driver/event"
-	"github.com/mongodb/mongo-go-driver/x/bsonx"
-	"github.com/mongodb/mongo-go-driver/x/network/address"
-	"github.com/mongodb/mongo-go-driver/x/network/compressor"
-	"github.com/mongodb/mongo-go-driver/x/network/description"
-	"github.com/mongodb/mongo-go-driver/x/network/wiremessage"
+	"mongo-go-driver/bson/bsontype"
+	"mongo-go-driver/event"
+	"mongo-go-driver/x/bsonx"
+	"mongo-go-driver/x/network/address"
+	"mongo-go-driver/x/network/compressor"
+	"mongo-go-driver/x/network/description"
+	"mongo-go-driver/x/network/wiremessage"
 )
 
 var globalClientConnectionID uint64

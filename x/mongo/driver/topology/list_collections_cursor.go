@@ -8,9 +8,9 @@ package topology
 
 import (
 	"context"
-	"github.com/mongodb/mongo-go-driver/bson"
-	"github.com/mongodb/mongo-go-driver/x/bsonx/bsoncore"
-	"github.com/mongodb/mongo-go-driver/x/network/command"
+	"mongo-go-driver/bson"
+	"mongo-go-driver/x/bsonx/bsoncore"
+	"mongo-go-driver/x/network/command"
 	"strings"
 )
 

@@ -9,7 +9,7 @@ package session
 import (
 	"testing"
 
-	"github.com/mongodb/mongo-go-driver/x/bsonx"
+	"mongo-go-driver/x/bsonx"
 )
 
 func TestClusterClock(t *testing.T) {

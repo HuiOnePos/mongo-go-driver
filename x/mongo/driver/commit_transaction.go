@@ -9,10 +9,10 @@ package driver
 import (
 	"context"
 
-	"github.com/mongodb/mongo-go-driver/x/mongo/driver/topology"
-	"github.com/mongodb/mongo-go-driver/x/network/command"
-	"github.com/mongodb/mongo-go-driver/x/network/description"
-	"github.com/mongodb/mongo-go-driver/x/network/result"
+	"mongo-go-driver/x/mongo/driver/topology"
+	"mongo-go-driver/x/network/command"
+	"mongo-go-driver/x/network/description"
+	"mongo-go-driver/x/network/result"
 )
 
 // CommitTransaction handles the full cycle dispatch and execution of committing a transaction

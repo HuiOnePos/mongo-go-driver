@@ -10,8 +10,8 @@ import (
 	"context"
 	"errors"
 
-	"github.com/mongodb/mongo-go-driver/bson"
-	"github.com/mongodb/mongo-go-driver/bson/bsoncodec"
+	"mongo-go-driver/bson"
+	"mongo-go-driver/bson/bsoncodec"
 )
 
 // ErrNoDocuments is returned by Decode when an operation that returns a

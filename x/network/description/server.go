@@ -10,10 +10,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/mongodb/mongo-go-driver/bson/primitive"
-	"github.com/mongodb/mongo-go-driver/tag"
-	"github.com/mongodb/mongo-go-driver/x/network/address"
-	"github.com/mongodb/mongo-go-driver/x/network/result"
+	"mongo-go-driver/bson/primitive"
+	"mongo-go-driver/tag"
+	"mongo-go-driver/x/network/address"
+	"mongo-go-driver/x/network/result"
 )
 
 // UnsetRTT is the unset value for a round trip time.

@@ -10,14 +10,14 @@ import (
 	"context"
 	"testing"
 
-	"github.com/mongodb/mongo-go-driver/bson"
-	"github.com/mongodb/mongo-go-driver/internal/testutil"
-	"github.com/mongodb/mongo-go-driver/x/bsonx"
-	"github.com/mongodb/mongo-go-driver/x/mongo/driver/topology"
-	"github.com/mongodb/mongo-go-driver/x/network/address"
-	"github.com/mongodb/mongo-go-driver/x/network/command"
-	"github.com/mongodb/mongo-go-driver/x/network/description"
-	"github.com/mongodb/mongo-go-driver/x/network/result"
+	"mongo-go-driver/bson"
+	"mongo-go-driver/internal/testutil"
+	"mongo-go-driver/x/bsonx"
+	"mongo-go-driver/x/mongo/driver/topology"
+	"mongo-go-driver/x/network/address"
+	"mongo-go-driver/x/network/command"
+	"mongo-go-driver/x/network/description"
+	"mongo-go-driver/x/network/result"
 	"github.com/stretchr/testify/require"
 )
 

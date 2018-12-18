@@ -17,13 +17,13 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/mongodb/mongo-go-driver/bson/bsoncodec"
-	"github.com/mongodb/mongo-go-driver/bson/bsonrw"
-	"github.com/mongodb/mongo-go-driver/bson/bsonrw/bsonrwtest"
-	"github.com/mongodb/mongo-go-driver/bson/bsontype"
-	"github.com/mongodb/mongo-go-driver/bson/primitive"
-	"github.com/mongodb/mongo-go-driver/x/bsonx"
-	"github.com/mongodb/mongo-go-driver/x/bsonx/bsoncore"
+	"mongo-go-driver/bson/bsoncodec"
+	"mongo-go-driver/bson/bsonrw"
+	"mongo-go-driver/bson/bsonrw/bsonrwtest"
+	"mongo-go-driver/bson/bsontype"
+	"mongo-go-driver/bson/primitive"
+	"mongo-go-driver/x/bsonx"
+	"mongo-go-driver/x/bsonx/bsoncore"
 )
 
 func bytesFromDoc(doc bsonx.Doc) []byte {

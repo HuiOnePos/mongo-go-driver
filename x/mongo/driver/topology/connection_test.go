@@ -10,10 +10,10 @@ import (
 	"context"
 	"testing"
 
-	"github.com/mongodb/mongo-go-driver/x/network/address"
-	"github.com/mongodb/mongo-go-driver/x/network/connection"
-	"github.com/mongodb/mongo-go-driver/x/network/description"
-	"github.com/mongodb/mongo-go-driver/x/network/wiremessage"
+	"mongo-go-driver/x/network/address"
+	"mongo-go-driver/x/network/connection"
+	"mongo-go-driver/x/network/description"
+	"mongo-go-driver/x/network/wiremessage"
 	"github.com/stretchr/testify/require"
 )
 

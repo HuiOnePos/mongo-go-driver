@@ -10,15 +10,15 @@ import (
 	"context"
 	"testing"
 
-	"github.com/mongodb/mongo-go-driver/bson"
-	"github.com/mongodb/mongo-go-driver/internal/testutil"
-	"github.com/mongodb/mongo-go-driver/mongo/writeconcern"
-	"github.com/mongodb/mongo-go-driver/x/bsonx"
-	"github.com/mongodb/mongo-go-driver/x/mongo/driver"
-	"github.com/mongodb/mongo-go-driver/x/mongo/driver/session"
-	"github.com/mongodb/mongo-go-driver/x/mongo/driver/uuid"
-	"github.com/mongodb/mongo-go-driver/x/network/command"
-	"github.com/mongodb/mongo-go-driver/x/network/description"
+	"mongo-go-driver/bson"
+	"mongo-go-driver/internal/testutil"
+	"mongo-go-driver/mongo/writeconcern"
+	"mongo-go-driver/x/bsonx"
+	"mongo-go-driver/x/mongo/driver"
+	"mongo-go-driver/x/mongo/driver/session"
+	"mongo-go-driver/x/mongo/driver/uuid"
+	"mongo-go-driver/x/network/command"
+	"mongo-go-driver/x/network/description"
 )
 
 func skipIfBelow32(t *testing.T) {

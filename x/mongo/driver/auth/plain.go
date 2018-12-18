@@ -9,8 +9,8 @@ package auth
 import (
 	"context"
 
-	"github.com/mongodb/mongo-go-driver/x/network/description"
-	"github.com/mongodb/mongo-go-driver/x/network/wiremessage"
+	"mongo-go-driver/x/network/description"
+	"mongo-go-driver/x/network/wiremessage"
 )
 
 // PLAIN is the mechanism name for PLAIN.

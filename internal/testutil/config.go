@@ -15,13 +15,13 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/mongodb/mongo-go-driver/event"
-	"github.com/mongodb/mongo-go-driver/x/bsonx"
-	"github.com/mongodb/mongo-go-driver/x/mongo/driver/topology"
-	"github.com/mongodb/mongo-go-driver/x/network/command"
-	"github.com/mongodb/mongo-go-driver/x/network/connection"
-	"github.com/mongodb/mongo-go-driver/x/network/connstring"
-	"github.com/mongodb/mongo-go-driver/x/network/description"
+	"mongo-go-driver/event"
+	"mongo-go-driver/x/bsonx"
+	"mongo-go-driver/x/mongo/driver/topology"
+	"mongo-go-driver/x/network/command"
+	"mongo-go-driver/x/network/connection"
+	"mongo-go-driver/x/network/connstring"
+	"mongo-go-driver/x/network/description"
 	"github.com/stretchr/testify/require"
 )
 

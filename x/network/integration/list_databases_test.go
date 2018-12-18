@@ -10,11 +10,11 @@ import (
 	"context"
 	"testing"
 
-	"github.com/mongodb/mongo-go-driver/internal/testutil"
-	"github.com/mongodb/mongo-go-driver/mongo/writeconcern"
-	"github.com/mongodb/mongo-go-driver/x/bsonx"
-	"github.com/mongodb/mongo-go-driver/x/network/command"
-	"github.com/mongodb/mongo-go-driver/x/network/description"
+	"mongo-go-driver/internal/testutil"
+	"mongo-go-driver/mongo/writeconcern"
+	"mongo-go-driver/x/bsonx"
+	"mongo-go-driver/x/network/command"
+	"mongo-go-driver/x/network/description"
 )
 
 func TestListDatabases(t *testing.T) {

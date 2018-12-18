@@ -9,10 +9,10 @@ package options
 import (
 	"time"
 
-	"github.com/mongodb/mongo-go-driver/mongo/readconcern"
-	"github.com/mongodb/mongo-go-driver/mongo/readpref"
-	"github.com/mongodb/mongo-go-driver/mongo/writeconcern"
-	"github.com/mongodb/mongo-go-driver/x/bsonx"
+	"mongo-go-driver/mongo/readconcern"
+	"mongo-go-driver/mongo/readpref"
+	"mongo-go-driver/mongo/writeconcern"
+	"mongo-go-driver/x/bsonx"
 )
 
 // DefaultName is the default name for a GridFS bucket.

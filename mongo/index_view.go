@@ -12,12 +12,12 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/mongodb/mongo-go-driver/bson"
-	"github.com/mongodb/mongo-go-driver/bson/bsontype"
-	"github.com/mongodb/mongo-go-driver/mongo/options"
-	"github.com/mongodb/mongo-go-driver/x/bsonx"
-	"github.com/mongodb/mongo-go-driver/x/mongo/driver"
-	"github.com/mongodb/mongo-go-driver/x/network/command"
+	"mongo-go-driver/bson"
+	"mongo-go-driver/bson/bsontype"
+	"mongo-go-driver/mongo/options"
+	"mongo-go-driver/x/bsonx"
+	"mongo-go-driver/x/mongo/driver"
+	"mongo-go-driver/x/network/command"
 )
 
 // ErrInvalidIndexValue indicates that the index Keys document has a value that isn't either a number or a string.

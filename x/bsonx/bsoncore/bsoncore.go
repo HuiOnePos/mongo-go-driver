@@ -31,8 +31,8 @@ import (
 	"math"
 	"time"
 
-	"github.com/mongodb/mongo-go-driver/bson/bsontype"
-	"github.com/mongodb/mongo-go-driver/bson/primitive"
+	"mongo-go-driver/bson/bsontype"
+	"mongo-go-driver/bson/primitive"
 )
 
 // AppendType will append t to dst and return the extended buffer.

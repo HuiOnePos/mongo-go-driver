@@ -11,7 +11,7 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/mongodb/mongo-go-driver/bson/bsoncodec"
+	"mongo-go-driver/bson/bsoncodec"
 )
 
 func TestUnmarshal(t *testing.T) {

@@ -10,14 +10,14 @@ import (
 	"context"
 	"errors"
 
-	"github.com/mongodb/mongo-go-driver/bson/primitive"
-	"github.com/mongodb/mongo-go-driver/mongo/options"
-	"github.com/mongodb/mongo-go-driver/x/bsonx"
-	"github.com/mongodb/mongo-go-driver/x/mongo/driver"
-	"github.com/mongodb/mongo-go-driver/x/mongo/driver/session"
-	"github.com/mongodb/mongo-go-driver/x/mongo/driver/topology"
-	"github.com/mongodb/mongo-go-driver/x/network/command"
-	"github.com/mongodb/mongo-go-driver/x/network/description"
+	"mongo-go-driver/bson/primitive"
+	"mongo-go-driver/mongo/options"
+	"mongo-go-driver/x/bsonx"
+	"mongo-go-driver/x/mongo/driver"
+	"mongo-go-driver/x/mongo/driver/session"
+	"mongo-go-driver/x/mongo/driver/topology"
+	"mongo-go-driver/x/network/command"
+	"mongo-go-driver/x/network/description"
 )
 
 // ErrWrongClient is returned when a user attempts to pass in a session created by a different client than

@@ -9,8 +9,8 @@ package wiremessage
 import (
 	"errors"
 
-	"github.com/mongodb/mongo-go-driver/bson"
-	"github.com/mongodb/mongo-go-driver/x/bsonx"
+	"mongo-go-driver/bson"
+	"mongo-go-driver/x/bsonx"
 )
 
 // Msg represents the OP_MSG message of the MongoDB wire protocol.

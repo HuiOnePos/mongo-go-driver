@@ -14,9 +14,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mongodb/mongo-go-driver/mongo/readpref"
-	"github.com/mongodb/mongo-go-driver/tag"
-	"github.com/mongodb/mongo-go-driver/x/network/address"
+	"mongo-go-driver/mongo/readpref"
+	"mongo-go-driver/tag"
+	"mongo-go-driver/x/network/address"
 	"github.com/stretchr/testify/require"
 )
 

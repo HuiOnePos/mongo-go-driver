@@ -11,8 +11,8 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/mongodb/mongo-go-driver/bson/bsontype"
-	"github.com/mongodb/mongo-go-driver/x/bsonx/bsoncore"
+	"mongo-go-driver/bson/bsontype"
+	"mongo-go-driver/x/bsonx/bsoncore"
 )
 
 func TestMDoc(t *testing.T) {

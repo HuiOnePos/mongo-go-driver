@@ -14,12 +14,12 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/mongodb/mongo-go-driver/mongo/options"
-	"github.com/mongodb/mongo-go-driver/x/bsonx"
+	"mongo-go-driver/mongo/options"
+	"mongo-go-driver/x/bsonx"
 
-	"github.com/mongodb/mongo-go-driver/bson"
-	"github.com/mongodb/mongo-go-driver/bson/bsoncodec"
-	"github.com/mongodb/mongo-go-driver/bson/primitive"
+	"mongo-go-driver/bson"
+	"mongo-go-driver/bson/bsoncodec"
+	"mongo-go-driver/bson/primitive"
 )
 
 // Dialer is used to make network connections.
